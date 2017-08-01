@@ -1,0 +1,10 @@
+<a class="grid__item" href="#">
+	<h2 class="title title--preview">{{ write.title}}</h2>
+	<div class="loader"></div>
+	<span class="category">{{ write.industry }}</span>
+	<div class="meta meta--preview">
+		<img class="meta__avatar" src="{{ accounts.profile_pictures}}" alt="author04" />
+		<span class="meta__date"><i class="fa fa-calendar-o"></i> {{ write.created_at|time_difference }}</span>
+		<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+	</div>
+</a>

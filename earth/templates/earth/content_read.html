@@ -1,0 +1,14 @@
+
+<article class="content__item">
+	<span class="category category--full">{{ write.industry }}</span>
+	<h2 class="title title--full">{{ write.title }}</h2>
+	<div class="meta meta--full">
+		<img class="meta__avatar" src="img/authors/4.png" alt="author04" />
+		<span class="meta__author">{{ UserProfile.first_name}} {{ UserProfile.last_name }}</span>
+		<span class="meta__date"><i class="fa fa-calendar-o"></i> {{ write.created_at|time_differance }}</span>
+		<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+	</div>
+		<p>	{{ write.text }} </p>
+	 {% load social_share %}
+	 	<p>{% post_to_facebook object_or_url "Post to Facebook!" %} </p>
+</article>
